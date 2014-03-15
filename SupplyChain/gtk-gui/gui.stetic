@@ -8,7 +8,88 @@
     <widget-library name="../bin/Debug/SupplyChain.exe" internal="true" />
     <widget-library name="../../../../../../../Applications/Xamarin Studio.app/Contents/MacOS/lib/monodevelop/AddIns/MonoDevelop.GtkCore/libstetic.dll" />
   </import>
-  <widget class="Gtk.Window" id="MainWindow" design-size="953 498">
+  <widget class="Gtk.Window" id="SupplyChain.MainWindow" design-size="953 498">
+    <action-group name="Default">
+      <action id="SupplyChainPlannerAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">SupplyChain Planner</property>
+        <property name="ShortLabel" translatable="yes">SupplyChain Planner</property>
+      </action>
+      <action id="DateiAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Datei</property>
+        <property name="ShortLabel" translatable="yes">Datei</property>
+      </action>
+      <action id="HilfeAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Hilfe</property>
+        <property name="ShortLabel" translatable="yes">Hilfe</property>
+      </action>
+      <action id="ffneAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Öffne...</property>
+        <property name="ShortLabel" translatable="yes">Öffne...</property>
+      </action>
+      <action id="ErgebnisseVorperiodeAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Ergebnisse Vorperiode</property>
+        <property name="ShortLabel" translatable="yes">Ergebnisse Vorperiode</property>
+      </action>
+      <action id="PlanungsdatenAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Planungsdaten</property>
+        <property name="ShortLabel" translatable="yes">Planungsdaten</property>
+      </action>
+      <action id="ErgebnisseVorperiodeAction1">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Ergebnisse Vorperiode</property>
+        <property name="ShortLabel" translatable="yes">Ergebnisse Vorperiode</property>
+      </action>
+      <action id="ExportierenAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Exportieren</property>
+        <property name="ShortLabel" translatable="yes">Exportieren</property>
+      </action>
+      <action id="ZurcksetzenAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Zurücksetzen</property>
+        <property name="ShortLabel" translatable="yes">Zurücksetzen</property>
+      </action>
+      <action id="NeuAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Neu</property>
+        <property name="ShortLabel" translatable="yes">Neu</property>
+      </action>
+      <action id="DruckenAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Drucken</property>
+        <property name="ShortLabel" translatable="yes">Drucken</property>
+      </action>
+      <action id="berSupplyChainPlannerAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Über SupplyChain Planner</property>
+        <property name="ShortLabel" translatable="yes">Über SupplyChain Planner</property>
+      </action>
+      <action id="EinstellungenAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Einstellungen</property>
+        <property name="ShortLabel" translatable="yes">Einstellungen</property>
+      </action>
+      <action id="SupplyChainPlannerVerbergenAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">SupplyChain Planner verbergen</property>
+        <property name="ShortLabel" translatable="yes">SupplyChain Planner verbergen</property>
+      </action>
+      <action id="BeendenAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Beenden</property>
+        <property name="ShortLabel" translatable="yes">Beenden</property>
+      </action>
+      <action id="Action">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes" />
+      </action>
+    </action-group>
     <property name="MemberName" />
     <property name="Title" translatable="yes">MainWindow</property>
     <property name="WindowPosition">CenterOnParent</property>
@@ -22,55 +103,38 @@
             <property name="MemberName" />
             <property name="Spacing">6</property>
             <child>
-              <widget class="Gtk.HButtonBox" id="hbuttonbox4">
+              <widget class="Gtk.MenuBar" id="menubar3">
                 <property name="MemberName" />
-                <property name="Size">3</property>
-                <property name="LayoutStyle">Start</property>
-                <child>
-                  <widget class="Gtk.Button" id="button139">
-                    <property name="MemberName" />
-                    <property name="CanFocus">True</property>
-                    <property name="Type">TextOnly</property>
-                    <property name="Label" translatable="yes">GtkButton</property>
-                    <property name="UseUnderline">True</property>
-                  </widget>
-                  <packing>
-                    <property name="Expand">False</property>
-                    <property name="Fill">False</property>
-                  </packing>
-                </child>
-                <child>
-                  <widget class="Gtk.Button" id="button140">
-                    <property name="MemberName" />
-                    <property name="CanFocus">True</property>
-                    <property name="Type">TextOnly</property>
-                    <property name="Label" translatable="yes">GtkButton</property>
-                    <property name="UseUnderline">True</property>
-                  </widget>
-                  <packing>
-                    <property name="Position">1</property>
-                    <property name="Expand">False</property>
-                    <property name="Fill">False</property>
-                  </packing>
-                </child>
-                <child>
-                  <widget class="Gtk.Button" id="button141">
-                    <property name="MemberName" />
-                    <property name="CanFocus">True</property>
-                    <property name="Type">TextOnly</property>
-                    <property name="Label" translatable="yes">GtkButton</property>
-                    <property name="UseUnderline">True</property>
-                  </widget>
-                  <packing>
-                    <property name="Position">2</property>
-                    <property name="Expand">False</property>
-                    <property name="Fill">False</property>
-                  </packing>
-                </child>
+                <node name="__gtksharp_132_Stetic_Editor_ActionMenuBar" type="Menubar">
+                  <node type="Menu" action="SupplyChainPlannerAction">
+                    <node type="Menuitem" action="berSupplyChainPlannerAction" />
+                    <node type="Separator" />
+                    <node type="Menuitem" action="EinstellungenAction" />
+                    <node type="Menuitem" action="SupplyChainPlannerVerbergenAction" />
+                    <node type="Separator" />
+                    <node type="Menuitem" action="BeendenAction" />
+                  </node>
+                  <node type="Menu" action="DateiAction">
+                    <node type="Menuitem" action="NeuAction" />
+                    <node type="Menu" action="ffneAction">
+                      <node type="Menuitem" action="PlanungsdatenAction" />
+                      <node type="Menuitem" action="ErgebnisseVorperiodeAction1" />
+                    </node>
+                    <node type="Separator" />
+                    <node type="Menuitem" action="ExportierenAction" />
+                    <node type="Menuitem" action="ZurcksetzenAction" />
+                    <node type="Separator" />
+                    <node type="Menuitem" action="DruckenAction" />
+                  </node>
+                  <node type="Menu" action="HilfeAction" />
+                  <node type="Menu" action="Action" />
+                </node>
               </widget>
               <packing>
                 <property name="Position">0</property>
                 <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
               </packing>
             </child>
             <child>

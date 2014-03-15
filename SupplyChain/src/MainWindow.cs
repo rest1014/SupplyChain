@@ -1,16 +1,26 @@
 ﻿using System;
 using Gtk;
 
-public partial class MainWindow: Gtk.Window
+namespace SupplyChain
 {
-	public MainWindow () : base (Gtk.WindowType.Toplevel)
+	public partial class MainWindow: Gtk.Window
 	{
-		Build ();
-	}
+		public MainWindow () : base (Gtk.WindowType.Toplevel)
+		{
+			Build ();
+		}
 
-	protected void OnDeleteEvent (object sender, DeleteEventArgs a)
-	{
-		Application.Quit ();
-		a.RetVal = true;
+		private void ReadImportData ()
+		{
+			String strPlanningData = ""
+			XMLParser Parser = new XMLParser()
+
+		}
+
+		protected void OnDeleteEvent (object sender, DeleteEventArgs a)
+		{
+			Application.Quit ();
+			a.RetVal = true;
+		}
 	}
 }
