@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SupplyChain
+namespace PlanningData
 {
 	public class PlanningData
 	{

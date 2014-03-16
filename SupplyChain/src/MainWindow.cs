@@ -12,8 +12,9 @@ namespace SupplyChain
 
 		private void ReadImportData ()
 		{
-			String strPlanningData = ""
-			XMLParser Parser = new XMLParser()
+			String strPlanningData = "/Users/steffen/Public/Dropbox/IBSYS 2/Daten Simulator/Periode2_Eingabedaten.xml";
+			XMLParser Parser = new XMLParser ();
+			Parser.parseXML (strPlanningData);
 
 		}
 
